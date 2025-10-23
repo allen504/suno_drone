@@ -42,3 +42,41 @@ main {
   margin: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+nav {
+  background-color: #004aad;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /* adjust size as needed */
+  width: auto;
+  border-radius: 6px; /* optional rounded corners */
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
