@@ -57,7 +57,7 @@ nav {
 }
 
 .logo {
-  height: 40px; /* adjust size as needed */
+  height: 100px; /* adjust size as needed */
   width: auto;
   border-radius: 6px; /* optional rounded corners */
 }
@@ -94,6 +94,7 @@ nav {
     margin: 0.5rem 0.75rem;
   }
 }
+
 
 
 
