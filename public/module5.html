@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 5: Assembly</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="module1.html">1. CAD Design</a>
+      <a href="module2.html">2. Fabrication</a>
+      <a href="module3.html">3. Electronics</a>
+      <a href="module4.html">4. Arduino</a>
+      <a href="module5.html">5. Assembly</a>
+      <a href="module6.html">6. Transmission & Security</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Module 5: Assembly</h1>
+    <p>
+      Assembly is where everything comes together: motors, sensors, radio, power, and frame.
+      Students integrate hardware into a complete system and prepare for flight.
+    </p>
+    <p class="module-weeks">
+      <strong>Main curriculum weeks:</strong> 18 (Sensor Integration),
+      19 (Radio Module Setup), 20 (Power Wiring &amp; Safety),
+      25 (Bench Flight &amp; Safety Check), 26 (Maiden Flight)
+    </p>
+
+    <!-- Week 18 -->
+    <section class="week-block">
+      <h2>Week 18 – Sensor Integration</h2>
+      <p>
+        Students install and wire the main IMU (e.g., MPU6050) and ensure that the sensor is
+        mounted in the correct orientation on the drone.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Mount the IMU securely to minimize vibration.</li>
+        <li>Wire sensor power, ground, and data lines correctly.</li>
+        <li>Verify communication between Arduino and sensor.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Physically mount the IMU to the frame using screws or tape.</li>
+        <li>Wire the sensor to the Arduino and double-check connections.</li>
+        <li>Upload a test sketch to confirm data is streaming correctly.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        The IMU is the drone’s sense of balance. Poor mounting or wiring can cause unstable
+        flight even if the code is perfect.
+      </p>
+    </section>
+
+    <!-- Week 19 -->
+    <section class="week-block">
+      <h2>Week 19 – Radio Module Setup</h2>
+      <p>
+        Students install and configure the wireless radio module that links the drone to its
+        controller (e.g., an NRF24L01-based link).
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand the role of the radio module in the control system.</li>
+        <li>Wire the module correctly to the microcontroller.</li>
+        <li>Verify basic send/receive communication between drone and controller.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Wire the radio module according to a reference diagram.</li>
+        <li>Upload test sketches to send and receive simple data.</li>
+        <li>Observe how range and orientation affect signal strength.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Without a reliable radio link, you can’t safely control the drone. This week connects
+        physical assembly to real-time control.
+      </p>
+    </section>
+
+    <!-- Week 20 -->
+    <section class="week-block">
+      <h2>Week 20 – Power Wiring &amp; Safety</h2>
+      <p>
+        Students complete power wiring, focusing on safe current paths, protection, and cable
+        management to keep the build robust and tidy.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Route battery power safely to all subsystems.</li>
+        <li>Use appropriate wire gauge, connectors, and insulation.</li>
+        <li>Check for shorts and weak connections before powering up.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Design and build the main power harness for the drone.</li>
+        <li>Inspect connections visually and with a multimeter for continuity/shorts.</li>
+        <li>Discuss fuse choices, strain relief, and best practices for field repairs.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Power issues are a common cause of drone failures. Good wiring and safety habits
+        protect both students and hardware.
+      </p>
+    </section>
+
+    <!-- Week 25 -->
+    <section class="week-block">
+      <h2>Week 25 – Bench Flight &amp; Safety Check</h2>
+      <p>
+        Before free flight, students perform thorough bench tests with the fully assembled
+        drone to make sure everything is working together.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Verify that all components are secured and wired correctly.</li>
+        <li>Test full system behavior while the drone is restrained.</li>
+        <li>Confirm safety procedures for starting and stopping the system.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Perform a full pre-flight checklist (mechanical and electrical).</li>
+        <li>Run throttle and movement tests on a bench rig.</li>
+        <li>Practice emergency shutoffs in simulated problem scenarios.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Bench checks are a critical gate before flight. Students learn to treat safety as a
+        normal part of engineering work, not an afterthought.
+      </p>
+    </section>
+
+    <!-- Week 26 -->
+    <section class="week-block">
+      <h2>Week 26 – Maiden Flight</h2>
+      <p>
+        The team attempts the first full, untethered flight of the assembled drone in a safe,
+        controlled environment and evaluates its performance.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Conduct a first flight safely and responsibly.</li>
+        <li>Observe how the drone responds to commands and disturbances.</li>
+        <li>Identify tuning or hardware changes needed after initial tests.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Review the environment and safety rules for flying.</li>
+        <li>Perform short hover and basic maneuver tests.</li>
+        <li>Debrief what went well and what needs adjustment for future flights.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        The maiden flight is a capstone for the build phase. It ties together mechanical,
+        electrical, and software work into a visible success (or a valuable learning moment!).
+      </p>
+    </section>
+  </main>
+</body>
+</html>
