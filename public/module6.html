@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 6: Transmission & Security</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="module1.html">1. CAD Design</a>
+      <a href="module2.html">2. Fabrication</a>
+      <a href="module3.html">3. Electronics</a>
+      <a href="module4.html">4. Arduino</a>
+      <a href="module5.html">5. Assembly</a>
+      <a href="module6.html">6. Transmission & Security</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Module 6: Transmission &amp; Security</h1>
+    <p>
+      In the final module, students investigate how data moves between the drone and its
+      controller, and how to protect that communication from common threats.
+    </p>
+    <p class="module-weeks">
+      <strong>Main curriculum weeks:</strong> 27 (Cybersecurity Fundamentals),
+      28 (Wireless Threats), 29 (Threat Modeling),
+      30 (Implementing Countermeasures), 31 (Demonstration &amp; Reflection)
+    </p>
+
+    <!-- Week 27 -->
+    <section class="week-block">
+      <h2>Week 27 – Cybersecurity Fundamentals</h2>
+      <p>
+        Students are introduced to core security ideas like confidentiality, integrity, and
+        availability, and connect them to drone systems.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Learn the CIA triad and basic security terminology.</li>
+        <li>Identify where data is stored and transmitted in their drone system.</li>
+        <li>Discuss what it means to “secure” a drone in practice.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Mini-lecture on key cybersecurity concepts.</li>
+        <li>Group brainstorm of ways a drone system could be attacked.</li>
+        <li>Map CIA concepts to different parts of their own build.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Drones are networked computers with motors attached. Security thinking is essential to
+        prevent misuse and protect people and data.
+      </p>
+    </section>
+
+    <!-- Week 28 -->
+    <section class="week-block">
+      <h2>Week 28 – Wireless Threats</h2>
+      <p>
+        Students explore common wireless threats like interception, jamming, and spoofing, and
+        consider how these could affect a drone in the real world.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Recognize common wireless attack types.</li>
+        <li>Connect each threat to potential drone failures or misuse cases.</li>
+        <li>Begin thinking about defenses and mitigations.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Discuss case studies of wireless attacks in the news (age-appropriate).</li>
+        <li>Identify which parts of the drone communication stack are exposed.</li>
+        <li>Brainstorm practical classroom-safe demonstrations of interference.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Understanding wireless risks makes the idea of “secure control links” concrete,
+        not just a checkbox.
+      </p>
+    </section>
+
+    <!-- Week 29 -->
+    <section class="week-block">
+      <h2>Week 29 – Threat Modeling</h2>
+      <p>
+        Students create a threat model for their own drone system, identifying assets, possible
+        attackers, and realistic attack paths.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Identify what needs protection (devices, data, people).</li>
+        <li>List potential attackers and their capabilities.</li>
+        <li>Draw attack paths that show how an incident could happen.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Fill out a structured threat-modeling worksheet for their drone.</li>
+        <li>Diagram data flows between controller, drone, and any external systems.</li>
+        <li>Share and compare threat models in small groups.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Threat modeling is a systematic way to think about risk. Students practice structured
+        reasoning instead of just listing random “bad things.”
+      </p>
+    </section>
+
+    <!-- Week 30 -->
+    <section class="week-block">
+      <h2>Week 30 – Implementing Countermeasures</h2>
+      <p>
+        Based on their threat models, students choose and apply specific countermeasures to
+        harden their drone’s communication and operation.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Connect threats to specific, realistic mitigations.</li>
+        <li>Implement at least one technical or procedural control.</li>
+        <li>Evaluate how well the chosen countermeasures address the risks.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Choose mitigations such as stronger pairing procedures, access control, or safe-flight rules.</li>
+        <li>Implement configuration changes or simple code-level protections where appropriate.</li>
+        <li>Test and document how the changes affect usage and security.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Security is only real when it changes behavior or technology. Students learn that even
+        small mitigations can significantly reduce risk.
+      </p>
+    </section>
+
+    <!-- Week 31 -->
+    <section class="week-block">
+      <h2>Week 31 – Demonstration &amp; Reflection</h2>
+      <p>
+        In the final week, students present their drones and explain not just how they fly,
+        but how they addressed security and safety in their designs.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Showcase the completed drone and its capabilities.</li>
+        <li>Communicate design and security decisions clearly.</li>
+        <li>Reflect on what worked, what failed, and what they’d change.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Run final demonstration flights or bench demos as appropriate.</li>
+        <li>Have each group present their threat model and mitigations.</li>
+        <li>Facilitate a class discussion about lessons learned and next steps.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        The demo week ties the entire course together, celebrating student work and reinforcing
+        both engineering and cybersecurity mindsets.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
