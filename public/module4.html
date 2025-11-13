@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 4: Arduino & Control Code</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="module1.html">1. CAD Design</a>
+      <a href="module2.html">2. Fabrication</a>
+      <a href="module3.html">3. Electronics</a>
+      <a href="module4.html">4. Arduino</a>
+      <a href="module5.html">5. Assembly</a>
+      <a href="module6.html">6. Transmission & Security</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Module 4: Arduino &amp; Control Code</h1>
+    <p>
+      In this module, students bring the drone to life with embedded code. They set up the
+      programming environment, read sensor data, drive motors, and perform controlled tests
+      before attempting a full flight.
+    </p>
+    <p class="module-weeks">
+      <strong>Main curriculum weeks:</strong> 21 (FPV Camera),
+      22 (Programming Setup &amp; Initial Code), 23 (Sensor Calibration),
+      24 (Motor Testing), 25 (Bench Flight &amp; Safety Check)
+    </p>
+
+    <!-- Week 21 -->
+    <section class="week-block">
+      <h2>Week 21 – FPV Camera</h2>
+      <p>
+        Students install and wire an FPV (First-Person View) camera system, learning how video
+        integrates with the control system for piloting.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand the basic components of an FPV system.</li>
+        <li>Wire power and signal for the FPV camera and transmitter.</li>
+        <li>Mount the camera securely on the drone frame.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Inspect an FPV camera and video transmitter (VTX) setup.</li>
+        <li>Wire the system to the drone’s power distribution safely.</li>
+        <li>Test the video feed and discuss latency and signal quality.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        FPV is a common way to fly drones. Understanding how video and control systems interact
+        prepares students for real-world piloting and troubleshooting.
+      </p>
+    </section>
+
+    <!-- Week 22 -->
+    <section class="week-block">
+      <h2>Week 22 – Programming Setup &amp; Initial Code</h2>
+      <p>
+        Students set up their Arduino programming environment and load starter firmware that
+        reads sensors and prepares to drive motors.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Install and configure the Arduino toolchain.</li>
+        <li>Connect the board (e.g. via FTDI) and upload sample code.</li>
+        <li>Understand the structure of the flight-control firmware.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Walk through installing the IDE or code editor.</li>
+        <li>Upload a simple “blink” or serial-print program to verify the connection.</li>
+        <li>Load the base flight-control sketch and identify key sections of code.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        This week establishes the software pipeline. If students can reliably program the board,
+        every later code change becomes much more manageable.
+      </p>
+    </section>
+
+    <!-- Week 23 -->
+    <section class="week-block">
+      <h2>Week 23 – Sensor Calibration</h2>
+      <p>
+        Students calibrate the IMU (e.g., MPU6050) and verify that gyro and accelerometer
+        readings are stable and meaningful.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand why sensors require calibration.</li>
+        <li>Calibrate offsets and scaling for the IMU.</li>
+        <li>Check sensor readings for noise and drift.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Run calibration routines from the flight firmware or helper sketches.</li>
+        <li>Visualize sensor data over time (serial monitor, plots, etc.).</li>
+        <li>Record calibration values and update configuration constants as needed.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        A drone can’t stabilize itself without trustworthy sensor data. Calibration connects
+        abstract math to precise, real-world performance.
+      </p>
+    </section>
+
+    <!-- Week 24 -->
+    <section class="week-block">
+      <h2>Week 24 – Motor Testing</h2>
+      <p>
+        With drivers wired and sensors calibrated, students carefully test motor spinning,
+        direction, and responsiveness under code control.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Verify that each motor spins when commanded.</li>
+        <li>Check that motor directions match the intended configuration.</li>
+        <li>Observe how code changes affect motor behavior.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Run test routines that spin motors one at a time.</li>
+        <li>Swap leads or update code to fix reversed motors.</li>
+        <li>Discuss throttle curves, minimum spin thresholds, and safety precautions.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Motor tests catch issues before the drone ever leaves the ground, preventing crashes
+        due to swapped wires or buggy code.
+      </p>
+    </section>
+
+    <!-- Week 25 -->
+    <section class="week-block">
+      <h2>Week 25 – Bench Flight &amp; Safety Check</h2>
+      <p>
+        Students perform “bench flight” tests, tethering or restraining the drone while running
+        full control code to verify stability and safety.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Run the full control loop with the drone safely restrained.</li>
+        <li>Check for abnormal vibrations, oscillations, or runaway behavior.</li>
+        <li>Confirm that emergency stop procedures work.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Secure the drone to a test rig or bench.</li>
+        <li>Arm and throttle up slowly while monitoring behavior.</li>
+        <li>Practice disarming quickly in response to unsafe conditions.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Bench testing teaches structured, safety-first debugging before taking the risk of
+        actual free flight.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
