@@ -8,28 +8,197 @@
 </head>
 <body>
   <nav>
-  <div class="nav-left">
-    <a href="/">
-      <img src="logo.png" alt="Company Logo" class="logo" />
-    </a>
-  </div>
-  <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="module1.html">1. CAD Design</a>
-    <a href="module2.html">2. Fabrication</a>
-    <a href="module3.html">3. Electronics</a>
-    <a href="module4.html">4. Arduino</a>
-    <a href="module5.html">5. Assembly</a>
-    <a href="module6.html">6. Transmission & Security</a>
-  </div>
-</nav>
+    <div class="nav-left">
+      <a href="/">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="module1.html">1. CAD Design</a>
+      <a href="module2.html">2. Fabrication</a>
+      <a href="module3.html">3. Electronics</a>
+      <a href="module4.html">4. Arduino</a>
+      <a href="module5.html">5. Assembly</a>
+      <a href="module6.html">6. Transmission & Security</a>
+    </div>
+  </nav>
 
   <main>
     <h1>Module 1: Designing & Modeling</h1>
-    <p>In this module, students will learn how to use CAD tools to design a lightweight drone frame optimized for strength and stability.</p>
-    <iframe src='https://instructions.online/?id=2319-suno%20drone%20frame' width='560' height='315' allowfullscreen></iframe>
+    <p>
+      In this module, students learn how to use CAD tools to design a lightweight drone frame
+      optimized for strength, stability, and real-world fabrication with 3D printing.
+    </p>
+
+    <!-- Build guide / reference -->
+    <section>
+      <h2>Build Guide</h2>
+      <p>
+        Use the interactive guide below as a reference while you work through the weekly lessons.
+      </p>
+      <iframe
+        src="https://instructions.online/?id=2319-suno%20drone%20frame"
+        width="560"
+        height="315"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Week 10 -->
+    <section class="week-block">
+      <h2>Week 10 – Introduction to 3D Modeling</h2>
+      <p>
+        Students are introduced to CAD (Computer-Aided Design) software and learn how to create
+        basic 3D shapes that will eventually become the drone frame.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Learn the basics of a CAD tool (e.g., Tinkercad, Onshape, or Fusion 360).</li>
+        <li>Understand how to create, move, rotate, and scale 3D shapes.</li>
+        <li>Develop spatial reasoning by viewing parts from multiple angles.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Instructor demo: navigating the CAD interface and using basic tools.</li>
+        <li>Students recreate a simple block-style drone frame from a reference.</li>
+        <li>Short challenges: “make a frame that is longer,” “add a camera mount cube,” etc.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Students build confidence with digital design before working on more complex engineering
+        constraints. This is the foundation for turning ideas into printable drone parts.
+      </p>
+    </section>
+
+    <!-- Week 11 -->
+    <section class="week-block">
+      <h2>Week 11 – 3D Frame Design Constraints</h2>
+      <p>
+        Students learn that drone frames must balance weight, strength, and geometry. They begin
+        designing their own frame with real engineering constraints.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand how weight, strength, and rigidity affect flight.</li>
+        <li>Consider motor spacing, propeller diameter, and center of gravity.</li>
+        <li>Plan mounting points for electronics, battery, and camera.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Analyze example drone frames and discuss trade-offs (light vs. strong).</li>
+        <li>Sketch a top-down view of the drone frame with labeled dimensions.</li>
+        <li>Students update their CAD models to respect motor spacing and center-of-gravity ideas.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Real drones fail when design constraints are ignored. Students begin thinking like engineers,
+        making intentional choices instead of random shapes.
+      </p>
+    </section>
+
+    <!-- Week 12 -->
+    <section class="week-block">
+      <h2>Week 12 – CAD &amp; Slicing for 3D Printing</h2>
+      <p>
+        Students take their digital frame from CAD into a slicer so it can be printed. They learn how
+        slicer settings affect print strength, time, and quality.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Finalize a printable version of the drone frame in CAD.</li>
+        <li>Export the frame as an STL (or similar) file.</li>
+        <li>Understand key slicer settings: layer height, infill, supports, and print time.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Students clean up their CAD models (no floating parts, correct thicknesses).</li>
+        <li>Export STL files and open them in a slicer.</li>
+        <li>
+          Experiment with slicer settings to see how they change estimated time and material usage.
+        </li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        This week connects “on-screen” design to physical reality. Students learn that settings like
+        infill and layer height can mean the difference between a fragile frame and a durable one.
+      </p>
+    </section>
+
+    <!-- Week 13 -->
+    <section class="week-block">
+      <h2>Week 13 – 3D Printing the Drone Frame</h2>
+      <p>
+        Students 3D print their frames (or parts of them) and practice safe printer operation and
+        basic troubleshooting.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Operate a 3D printer safely and responsibly.</li>
+        <li>Monitor a print and recognize common print failures.</li>
+        <li>Compare printed parts to the original CAD model.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Review printer safety: hot end, moving parts, ventilation, and supervision rules.</li>
+        <li>Start prints for student frames (staggered if there are limited printers).</li>
+        <li>
+          Observe prints in progress and discuss issues like warping, poor adhesion, or stringing.
+        </li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Hands-on fabrication is a key maker skill. Students see how their design choices and slicer
+        settings play out on a real machine.
+      </p>
+    </section>
+
+    <!-- Week 14 -->
+    <section class="week-block">
+      <h2>Week 14 – Post-Processing &amp; Assembly Prep</h2>
+      <p>
+        Students clean and refine their printed frames so they’re ready for electronics and motors.
+        This includes sanding, drilling, and test-fitting key components.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Learn basic post-processing techniques for 3D printed parts.</li>
+        <li>Create clean mounting points for motors, battery, and electronics.</li>
+        <li>Verify that the frame is physically ready for later modules (electronics and assembly).</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>
+          Clean up prints: remove supports, trim strings, lightly sand rough surfaces where needed.
+        </li>
+        <li>Drill or ream mounting holes for motors and standoffs (with supervision and PPE).</li>
+        <li>
+          Test-fit sample motors, battery, and control boards to confirm that everything fits on the
+          frame.
+        </li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        A design is only successful if it can be built. Post-processing teaches students how to bridge
+        the gap from “just printed” to “ready for electronics,” setting up the next modules in the
+        course.
+      </p>
+    </section>
   </main>
 </body>
 </html>
-
-
