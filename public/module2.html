@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 2: Fabrication & 3D Printing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="module1.html">1. CAD Design</a>
+      <a href="module2.html">2. Fabrication</a>
+      <a href="module3.html">3. Electronics</a>
+      <a href="module4.html">4. Arduino</a>
+      <a href="module5.html">5. Assembly</a>
+      <a href="module6.html">6. Transmission & Security</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Module 2: Fabrication &amp; 3D Printing</h1>
+    <p>
+      This module focuses on turning the drone frame from a digital model into a physical,
+      flight-ready part. Students move from slicing to printing, post-processing, and
+      preparing the frame for motors and electronics.
+    </p>
+    <p class="module-weeks">
+      <strong>Main curriculum weeks:</strong> 12 (CAD + Slicing), 13 (3D Printing),
+      14 (Post-Processing &amp; Assembly Prep), 15 (Review of Drone Electrical Architecture),
+      16 (Motor Driver Circuit)
+    </p>
+
+    <!-- Week 12 -->
+    <section class="week-block">
+      <h2>Week 12 – CAD + Slicing</h2>
+      <p>
+        Students finalize their 3D drone frame models and learn how to slice them for printing,
+        choosing settings that balance strength, print time, and material use.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Finalize a clean, printable 3D frame model.</li>
+        <li>Export the design as an STL (or similar) file.</li>
+        <li>Understand slicer basics: layer height, infill, supports, and print time.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Clean up CAD models (fix thin walls, remove floating geometry).</li>
+        <li>Export STL files and load them into a slicer.</li>
+        <li>Experiment with slicer settings and compare estimated print times and material usage.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Students see how design decisions and slicer settings affect printability and durability,
+        reinforcing the link between virtual design and real-world fabrication.
+      </p>
+    </section>
+
+    <!-- Week 13 -->
+    <section class="week-block">
+      <h2>Week 13 – 3D Printing</h2>
+      <p>
+        With sliced models ready, students learn how to operate a 3D printer safely and supervise
+        the printing of their drone frames or frame sections.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Safely operate a classroom 3D printer.</li>
+        <li>Monitor an active print and recognize common failures.</li>
+        <li>Compare the printed frame to the original model and expectations.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Review 3D printer safety (hot end, moving parts, ventilation, supervision).</li>
+        <li>Start prints for student frames and take turns monitoring progress.</li>
+        <li>Identify and discuss issues like warping, bed adhesion problems, and stringing.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Students gain hands-on fabrication skills and learn to troubleshoot physical problems
+        that software alone cannot solve.
+      </p>
+    </section>
+
+    <!-- Week 14 -->
+    <section class="week-block">
+      <h2>Week 14 – Post-Processing &amp; Assembly Prep</h2>
+      <p>
+        Students clean and refine their printed frames, making sure everything fits and the frame
+        is robust enough for motors, props, and electronics.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Learn basic post-processing techniques for 3D printed parts.</li>
+        <li>Prepare precise mounting points for motors and hardware.</li>
+        <li>Verify that the frame is ready to accept electronics in later modules.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Remove supports, trim artifacts, and lightly sand or file rough edges.</li>
+        <li>Drill or ream mounting holes to match motor and standoff hardware.</li>
+        <li>Test-fit motors, battery, and control boards so students can spot issues early.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        A printed frame is not automatically ready for flight. Post-processing teaches students
+        how to turn a rough print into a functional, reliable part.
+      </p>
+    </section>
+
+    <!-- Week 15 -->
+    <section class="week-block">
+      <h2>Week 15 – Review of Drone Electrical Architecture</h2>
+      <p>
+        Students zoom out and look at the full electrical system of the drone: power, motors,
+        sensors, radio, and control board, and how they all connect.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Map out all of the drone&#39;s electrical subsystems.</li>
+        <li>Understand how power flows from the battery to every major component.</li>
+        <li>Relate frame design decisions to where and how components will mount.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Draw a system-level diagram of the drone&#39;s wiring and components.</li>
+        <li>Discuss where each component will be physically mounted on the printed frame.</li>
+        <li>Identify potential cable routing and strain-relief strategies.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Fabrication is not just printing a frame; it’s creating a structure that can cleanly host
+        the entire electrical system without tangles or surprises later.
+      </p>
+    </section>
+
+    <!-- Week 16 -->
+    <section class="week-block">
+      <h2>Week 16 – Motor Driver Circuit</h2>
+      <p>
+        Students build or assemble the motor driver stage that lets a low-power Arduino pin
+        safely control high-current drone motors.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand why motor drivers are needed between the microcontroller and motors.</li>
+        <li>Wire or solder the motor driver circuit correctly.</li>
+        <li>Relate current, voltage, and power to real hardware limits.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Review example motor driver circuits and datasheets.</li>
+        <li>Assemble and wire the motor driver on perfboard or a small PCB.</li>
+        <li>Check for shorts, correct polarity, and neat, serviceable wiring.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        This week bridges fabrication and electronics. Students see how structural and electrical
+        decisions work together to produce a safe, controllable drone.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
