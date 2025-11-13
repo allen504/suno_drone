@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 3: Electronics & Wiring</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="/">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="module1.html">1. CAD Design</a>
+      <a href="module2.html">2. Fabrication</a>
+      <a href="module3.html">3. Electronics</a>
+      <a href="module4.html">4. Arduino</a>
+      <a href="module5.html">5. Assembly</a>
+      <a href="module6.html">6. Transmission & Security</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Module 3: Electronics &amp; Wiring</h1>
+    <p>
+      This module builds the electrical foundation students need before they touch the drone’s
+      real hardware. Using breadboards, power sources, and measuring tools, students learn how
+      circuits behave in the real world.
+    </p>
+    <p class="module-weeks">
+      <strong>Main curriculum weeks:</strong> 3 (Introduction &amp; DC Circuits),
+      4 (Ohm’s Law &amp; Measurement), 5 (Series &amp; Parallel Circuits),
+      6 (Power Sources &amp; Batteries), 7 (Voltage Drop &amp; Real-World Effects)
+    </p>
+
+    <!-- Week 3 -->
+    <section class="week-block">
+      <h2>Week 3 – Introduction &amp; DC Circuit Slides</h2>
+      <p>
+        Students are introduced to basic circuit concepts like voltage, current, and resistance,
+        and see how these ideas show up in everyday electronics.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Orient students to the course and lab expectations.</li>
+        <li>Understand what voltage, current, and resistance mean.</li>
+        <li>Recognize simple DC circuit symbols and diagrams.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Slide-based introduction to DC circuits with real-life examples.</li>
+        <li>Discuss batteries, LEDs, and other familiar components.</li>
+        <li>Short prediction questions about what will happen in simple circuits.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        These concepts are the vocabulary of electronics. Students will revisit them repeatedly
+        while wiring and debugging the drone.
+      </p>
+    </section>
+
+    <!-- Week 4 -->
+    <section class="week-block">
+      <h2>Week 4 – Ohm’s Law &amp; Measurement</h2>
+      <p>
+        Students learn Ohm’s Law and practice using a multimeter to measure voltage, current,
+        and resistance in a real circuit.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand and apply Ohm’s Law (V = I × R).</li>
+        <li>Use a multimeter safely and correctly.</li>
+        <li>Compare predicted values with actual measurements.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Build simple resistor circuits on a breadboard.</li>
+        <li>Measure voltage across and current through components.</li>
+        <li>Practice swapping resistor values to see the effect on current.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Being able to measure and verify what a circuit is doing is essential for diagnosing
+        issues later in the drone build.
+      </p>
+    </section>
+
+    <!-- Week 5 -->
+    <section class="week-block">
+      <h2>Week 5 – Series &amp; Parallel Circuits</h2>
+      <p>
+        Students discover how combining resistors in series and parallel changes total resistance
+        and how voltage and current distribute across a circuit.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Differentiate between series and parallel connections.</li>
+        <li>Predict total resistance for both types of networks.</li>
+        <li>Relate circuit configuration to brightness or behavior of loads.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Build both series and parallel LED/resistor circuits.</li>
+        <li>Measure currents and voltages in each configuration.</li>
+        <li>Compare observations to theoretical calculations.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Real drones contain lots of series and parallel paths. Understanding how they behave
+        prevents wiring mistakes that could damage components.
+      </p>
+    </section>
+
+    <!-- Week 6 -->
+    <section class="week-block">
+      <h2>Week 6 – Power Sources &amp; Batteries</h2>
+      <p>
+        Students look more closely at batteries and power supplies, learning about capacity,
+        internal resistance, and why power management matters.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Understand basic battery specs (voltage, capacity, C-rating).</li>
+        <li>Discuss internal resistance and how it affects performance.</li>
+        <li>Connect batteries safely in simple test circuits.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Examine labels and datasheets for different batteries.</li>
+        <li>Compare how different sources behave under load.</li>
+        <li>Discuss LiPo safety and classroom handling rules.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        The drone depends on safe, reliable power. Misunderstanding batteries can lead to
+        brownouts, crashes, or safety hazards.
+      </p>
+    </section>
+
+    <!-- Week 7 -->
+    <section class="week-block">
+      <h2>Week 7 – Voltage Drop &amp; Real-World Effects</h2>
+      <p>
+        Students see how wires, connections, and real components introduce voltage drops and
+        losses that don’t show up in idealized diagrams.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Observe voltage drops along wires and across components.</li>
+        <li>Recognize why long or thin wires can cause problems.</li>
+        <li>Connect theory to the messy reality of physical circuits.</li>
+      </ul>
+
+      <h3>In-Class Activities</h3>
+      <ul>
+        <li>Build circuits that intentionally show noticeable voltage drop.</li>
+        <li>Measure voltages at multiple points and compare to expectations.</li>
+        <li>Discuss how these issues could affect a drone in flight.</li>
+      </ul>
+
+      <h3>Why This Matters</h3>
+      <p>
+        Understanding real-world losses prepares students to route wires intelligently and
+        diagnose subtle power problems in their drone.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
