@@ -94,6 +94,25 @@ nav {
     margin: 0.5rem 0.75rem;
   }
 }
+.module-image {
+  margin: 1.5rem auto;
+  text-align: center;
+  max-width: 480px;
+}
+
+.module-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.module-image figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  opacity: 0.8;
+}
+
+
 
 
 
